@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>TEST | Delta Security</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+
+<style>
+.section {
+  background-color: white;
+}
+
+#switch-link {
+  cursor: pointer;
+}
+
+.col-block {
+  background: #ddd;
+  height: 100%;
+  padding: 1.25em;
+}
+
+a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.is-active {
+  color: #20bc56;
+}
+
+.footer-contact a {
+  color: #4a4a4a;
+}
+
+.footer-contact a:hover {
+  color: #20bc56;
+}
+
+a.green-link {
+  color: #20bc56;
+}
+
+a.green-link:hover {
+  color: #199a45;
+}
+
+.icon.is-large {
+  margin-bottom: 0.5em;
+}
+
+.col-block > header {
+  margin-bottom: 0.5em;
+}
+
+.navbar {
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(102,102,102,0.3);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(102,102,102,0.3);
+  box-shadow: 0px 3px 5px 0px rgba(102,102,102,0.3);
+}
+</style>
+
+</head>
+<body class="has-navbar-fixed-top">
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="./index.html" style="font-size: 1.25em;">
+        <img id="navbar-logo" src="./media/img/ds-toplogo.png" width="112" height="100" style="max-height: 5em;" />
+        <b>DELTA SECURITY</b>
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">Home Security</a>
+        <a class="navbar-item">Business Security</a>
+        <a class="navbar-item">About</a>
+        <a class="navbar-item">Contact</a> 
+      </div>
+      <div class="navbar-end">
+        <a class="navbar-item" href="tel:2157529189">
+          <span class="icon">
+            <i class="fas fa-phone"></i>
+          </span>
+          <span>215-752-9189</span>
+        </a>
+        <a class="navbar-item" href="mailto:info@deltasecurityonline.com">
+          <span class="icon">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span>info@deltasecurityonline.com</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+{% block content %}{% endblock%}
+
+<footer class="footer">
+  <div class="content">
+    <div class="columns">
+      <div class="column">
+        <h3 class="title is-3">ABOUT US</h3>
+        <div class="content">
+          <p>We are <b>Delta Security</b>, a locally owned and family operated security company. We have been providing homes and businesses with <b>outstanding service for over 30 years</b>.</p>
+          <p>Gain more control of your life by saving time and money with a professionally installed security system by <b>Delta Security</b>.  We offer low monthly monitoring costs. Current service contracts with other companies can also be updated and enhanced with new features installed. </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <h3 class="title is-3">POWERED BY</h3>
+          <figure class="image"><img src="./media/img/alarm-black.png" style="width: 15em;" /></figure>
+          <figure class="image"><img src="./media/img/hw-black.png" style="width: 15em;" /></figure>
+          <figure class="image"><img src="./media/img/ge-black.png" style="width: 6.5em;" /></figure>
+          <figure class="image"><img src="./media/img/am-black.png" style="width: 15em;" /></figure>
+        </div>
+      </div>
+      <div class="column footer-contact">
+        <h3 class="title is-3">CONTACT US</h3>
+        <div class="content">
+          <p>
+            <span class="icon">
+              <i class="fas fa-phone"></i>
+            </span>    
+            <a>215-752-9189</a>
+          </p>
+          <p>
+            <span class="icon">
+              <i class="fas fa-fax"></i>
+            </span>    
+            <a>215-741-6419</a>
+          </p>
+          <p>
+            <span class="icon">
+              <i class="fas fa-envelope"></i>
+            </span>    
+            <a href="mailto:info@deltasecurityonline.com">info@deltasecurityonline.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <p class="is-size-7"><span>© Copyright <span id="c-year"></span> Delta Security, LLC.</span> | <span>Developed by <a href="" class="green-link">Ian Rockefeller</a></span></p>
+  </div>
+</footer>
+</body>
+<script>
+$(document).ready(function() {
+
+  // HELPER FUNCTIONS
+  function checkForMultilineBreak() {
+    if($(window).width() <= 1280) {
+      $('.is-multiline > .column').addClass('is-half');
+      $('#navbar-logo').hide();
+      $('body').css('padding-top', '3.25rem');
+    } else {
+      $('.is-multiline > .column').removeClass('is-half');
+      $('#navbar-logo').show();
+      $('body').css('padding-top', '7rem');
+    }    
+  }
+
+  function initCopyrightYear() {
+    $('#c-year').html((new Date()).getFullYear());
+  }
+
+  // Put all helper functions here
+  function initOnReady() {
+    checkForMultilineBreak();
+    initCopyrightYear();
+  }
+
+  $(window).resize(function() {
+    checkForMultilineBreak();
+  });
+
+  // Check for click events on the navbar burger icon
+  $(".navbar-burger").click(function() {
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      $(".navbar-burger").toggleClass("is-active");
+      $(".navbar-menu").toggleClass("is-active");
+
+  });
+
+  // init custom on ready code
+  initOnReady();
+});
+</script>
+</html>

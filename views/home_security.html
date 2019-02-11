@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block title %}Home Security{% endblock%}
+
+{% block styles %}
+<style>
+.hero-body {
+  background-image: url('./img/hs-header.png');
+  background-size: cover;  
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 375px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-body .title {
+  color: white;
+  /*font-size: 42px;*/
+  letter-spacing: 5px;
+}
+
+.hero-body .subtitle {
+  color: white;
+  letter-spacing: 2px;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="hero is-medium">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title is-1"><b>Home Security</b></h1>
+      <h2 class="subtitle is-4">Custom-tailored <b>residential security solutions</b> to protect what matters most.</h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="content">
+      <h3 class="title is-3 has-text-centered"><b>Delta Security</b> has got you covered!</h3>
+      <p><b>Emergencies</b> do not happen often, but when they do <b>you better be prepared</b>. That's where Delta can help. Our <b>constantly monitored systems</b> will ensure the <b>quickest response times</b> in case an emergency does arise and you will immediately be alerted from your internet-connected mobile device <b>no matter where</b> you are in the world.</p>
+      <p>For over thirty years, <b>Delta Security</b> has been designing and installing <b>custom burglar, fire, and video surveillance systems</b> to fit our customers' <b>individual needs</b>. No matter how old or new, finished or unfinished your home is, <b>Delta Security</b> can design and install a system that best fits your needs and budget.</p>
+      <p>By tailoring the system to your needs, we can <b>integrate</b> security, cameras, lighting, thermostat, locks, garage doors, <b>and more</b> into one <b>easy-to-use mobile app</b> that keeps you connected to your home <b>from anywhere in the world</b>.</p>          
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div style="max-width: 960px; margin: 0 auto 2em;">
+      <h3 class="title has-text-centered">Features and Benefits</h3>
+      <div class="columns has-text-centered">
+        <div class="column">
+          <header><img class="image" src="./img/home-burglar-header.png"></header>
+          <div style="background: #ddd; padding: 1.25em;">
+            <h4 class="title is-4">Burglar</h4>
+            <p><a class="green-link" href="/home-security/burglar">Click here to learn more</a></p>
+          </div>
+        </div>
+        <div class="column">
+          <header><img class="image" src="./img/home-fire-header.png"></header>
+          <div style="background: #ddd; padding: 1.25em;">
+            <h4 class="title is-4">Fire</h4>
+            <p><a class="green-link" href="/home-security/fire">Click here to learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="columns has-text-centered">
+        <div class="column">
+          <header><img class="image" src="./img/home-cameras-header.png"></header>
+          <div style="background: #ddd; padding: 1.25em;">
+            <h4 class="title is-4">Cameras</h4>
+            <p><a class="green-link" href="/home-security/cameras">Click here to learn more</a></p>
+          </div>
+        </div>
+        <div class="column">
+          <header><img class="image" src="./img/home-automation-header.png"></header>
+          <div style="background: #ddd; padding: 1.25em;">
+            <h4 class="title is-4">Interactive Services</h4>
+            <p><a class="green-link" href="/home-security/interactive-services">Click here to learn more</a></p>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+</section>
+{% endblock %}

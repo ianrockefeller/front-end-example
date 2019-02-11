@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %}Home Security{% endblock%}
+
+{% block styles %}
+<style>
+.hero-body {
+  background-image: url('/img/hs-header.png');
+  background-size: cover;  
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 375px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-body .title {
+  color: white;
+  /*font-size: 42px;*/
+  letter-spacing: 5px;
+}
+
+.hero-body .subtitle {
+  color: white;
+  letter-spacing: 2px;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="hero is-medium">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title"><b>Home Video Surveillance System</b></h1>
+      <h2 class="subtitle">Get a whole new level of security with a <b>residential video monitoring system</b></h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h3 class="title has-text-centered">Features and Benefits</h3>
+    <div class="columns">
+      <div class="column">
+        <div class="col-block">
+          <h4 class="title is-4 has-text-centered">Live Video Streaming</h4>
+          <p>Access your video surveillance system <b>anywhere from your phone or computer</b>. Find out who's in your house or who pulled up the drive way and take control of your residence remotely.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="col-block">
+          <h4 class="title is-4 has-text-centered">Save Video to the Cloud</h4>
+          <p><b>Record and save</b> incidences to review later or submit as evidence in case of an emergency.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="col-block">
+          <h4 class="title is-4 has-text-centered">Instant Notification</h4>
+          <p>Set up and customize <b>event-driven notifications</b> to receive email or text message alerts with video and picture attachments of the recording allowing you to react faster to an emergency situation.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+{% endblock %}

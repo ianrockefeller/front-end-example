@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block title %}Home Security{% endblock%}
+
+{% block styles %}
+<style>
+.hero-body {
+  background-image: url('/img/hs-header.png');
+  background-size: cover;  
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 375px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-body .title {
+  color: white;
+  /*font-size: 42px;*/
+  letter-spacing: 5px;
+}
+
+.hero-body .subtitle {
+  color: white;
+  letter-spacing: 2px;
+}
+
+.col-block {
+  padding: 0;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="hero is-medium">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title is-1"><b>Home Burglar Alarm System</b></h1>
+      <h2 class="subtitle is-5">Protect what matters most with a custom designed burglar alarm system from Delta Security</h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width: 960px;">
+    <div class="columns">
+      <div class="column">
+        <div class="col-block">
+          <header><img class="image" style="width: 100%;" src="/img/wireless-header.png"></header>
+          <div style="background: #ddd; padding: 1.25em;">          
+            <h4 class="title is-4 has-text-centered">Wireless Sensors</h4>
+            <p>Provide maximum adaptability and protection to your residence with the freedom of wireless window and door sensors.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="col-block">
+          <header><img class="image" style="width: 100%;" src="/img/pet-header.png"></header>
+          <div style="background: #ddd; padding: 1.25em;">          
+            <h4 class="title is-4 has-text-centered">Pet-friendly Motion Detectors</h4>
+            <p>Allow for animals under 50 pounds to go undetected by your burglar alarm system.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <div class="col-block">
+          <header><img class="image" style="width: 100%;" src="/img/battery-header.png"></header>
+          <div style="background: #ddd; padding: 1.25em;">          
+            <h4 class="title is-4 has-text-centered">Battery Backup</h4>
+            <p>Even when your power goes out, you can rest assured that your home will continue to be monitored as all of our panels are connected to a <b>battery backup</b> that will last for up to 24 hours.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="col-block">
+          <header><img class="image" style="width: 100%;" src="/img/yard-sign-header.png"></header>
+          <div style="background: #ddd; padding: 1.25em;">
+            <h4 class="title is-4 has-text-centered">Yard Signs and Window Decals</h4>
+            <p>Deter burglary, theft, and vandalism with our <b>yard signs and window decals</b>. Potential intruders and wrongdoers are more likely to avoid homes with our sign in your lawn.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

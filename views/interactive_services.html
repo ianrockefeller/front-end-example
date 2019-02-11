@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}Home Security{% endblock%}
+
+{% block styles %}
+<style>
+.hero-body {
+  background-image: url('/img/hs-header.png');
+  background-size: cover;  
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 375px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-body .title {
+  color: white;
+  /*font-size: 42px;*/
+  letter-spacing: 5px;
+}
+
+.hero-body .subtitle {
+  color: white;
+  letter-spacing: 2px;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="hero is-medium">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title"><b>Interactive Services<br/>and Home Automation</b></h1>
+      <h2 class="subtitle">Integrate your <b>entire</b> home security system into one app <b>on your phone</b></h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h3 class="title has-text-centered">Welcome to your <b>new</b> security system interface</h3>
+    <div class="columns" style="max-width: 960px; margin: 0 auto;">
+      <div class="column">
+        <img src="/img/app-ui.png" class="image" />    
+      </div>
+      <div class="column">
+        <img src="/img/app-image.gif" class="image" />
+      </div>
+    </div>
+    <header class="has-text-centered">
+      <h4 style="font-size: 1.25em; font-weight: 400;">Todays security products provide the ability to <b>enhance</b> one's lifestyle, making your home <b>safe</b>, <b>comfortable</b> and <b>convenient</b>.</h4>
+      <h4 style="font-size: 1.25em; font-weight: 400;">Delta will <b>integrate</b> security, cameras, lighting, thermostats into <b>one app</b> that keeps you connected, designed custom to your lifestyle.</h4>  
+    </header>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block title %}Home Security{% endblock%}
+
+{% block styles %}
+<style>
+.hero-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-body .title {
+  color: white;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="hero is-medium is-primary is-bold">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title is-1"><b>Switch to Delta Security Today!</b></h1>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="content">
+          <h3 class="title">Current service contracts with other companies can be updated and enhanced with new features installed.</h3>
+          <p>Gain more <b>control</b> of your life by <b>saving time and money</b> with a professionally installed security system by Delta Security.</p>
+          <p>We offer <b>low</b> monthly monitoring costs.</p>
+        </div>        
+      </div>
+      <div class="column">
+        <header class="has-text-centered" style="margin-bottom: 2em;">
+          <h3 class="title">START YOUR <u>FREE</u> QUOTE</h3>
+        </header>    
+        <form action="https://formspree.io/info@deltasecurityonline.com" method="POST">
+          <div class="columns">
+            <div class="column">
+              <div class="field">
+                <div class="control"><input class="input" type="text" placeholder="First Name" name="first_name" /></div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="field">
+                <div class="control"><input class="input" type="text" placeholder="Last Name" name="last_name" /></div>
+              </div>
+            </div>      
+          </div>
+          <div class="columns">
+            <div class="column">
+              <div class="field">
+                <div class="control"><input class="input" type="tel" placeholder="Phone Number (ex. 123-456-7890)" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone-number" /></div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="field">
+                <div class="control">
+                  <input class="input" type="email" placeholder="Email" name="_replyto" />
+                </div>
+              </div>
+            </div>    
+          </div>
+          <div class="columns">
+            <div class="column">
+              <div class="field">
+                <div class="control"><input class="input" type="text" pattern="[0-9]{5}" placeholder="Zip Code" name="zipcode" /></div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="field">
+                <div class="control">
+                  <span class="icon is-large">
+                    <i class="fas fa-arrow-circle-right fa-2x"></i>
+                  </span> 
+                  <button type="submit" class="button is-success is-medium" style="font-weight: 600;">SUBMIT</button>
+                </div>
+              </div>
+            </div>    
+          </div>  
+        </form>         
+      </div>
+    </div>
+  </div>  
+</section>
+{% endblock%}

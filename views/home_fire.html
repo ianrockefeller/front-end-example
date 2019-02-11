@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% block title %}Home Security{% endblock%}
+
+{% block styles %}
+<style>
+.hero-body {
+  background-image: url('/img/hs-header.png');
+  background-size: cover;  
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 375px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-body .title {
+  color: white;
+  /*font-size: 42px;*/
+  letter-spacing: 5px;
+}
+
+.hero-body .subtitle {
+  color: white;
+  letter-spacing: 2px;
+}
+
+.col-block {
+  padding: 0;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="hero is-medium">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title"><b>Home Fire Alarm System</b></h1>
+      <h2 class="subtitle">Protect your home from the unthinkable for the quickest reponse time whether you are home or away</h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="col-block">
+          <div style="padding: 1.25em; background: #ddd; height: 100%;">
+            <h4 class="title is-4 has-text-centered">Conventional Smoke Detectors</h4>
+            <p><b>Standalone smoke detectors</b> are battery powered and are not connected to any fire alarm system to contact the fire department for an emergency response. They are only capable of alerting people nearby that there is smoke and not saving your life.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="col-block">
+          <div style="padding: 1.25em; background: #ddd; height: 100%;">
+            <h4 class="title is-4 has-text-centered">Monitored Smoke Detectors</h4>
+            <p><b>Monitored Smoke Detectors</b> are connected and integrated into a home fire alarm system that will dispatch the fire department when a sensor in the system is tripped. This is the safest method for protecting your home from fire damage. Whether you are at home or away, you can have the peace of mind that your home is protected.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <div class="columns is-vcentered">
+          <div class="column">
+            <img class="image" style="width: 100%;" src="/img/home-smoke-header.png">
+          </div>
+          <div class="column">
+            <div style="padding: 1.25em; background: #ddd; height: 100%;">
+              <h4 class="title is-4 has-text-centered">Smoke Detectors</h4>
+              <p><b>Smoke detectors</b> identify the best indicator of the early stages of a fire. They are located through out the house with a one per level minimum. These devices are sensitive to extreme cold and heat and dust so should never be used in a garage or attic.</p>
+            </div>             
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="columns is-vcentered">
+          <div class="column">
+            <img class="image" style="width: 100%;" src="/img/home-heat-header.png">
+          </div>
+          <div class="column">
+            <div style="padding: 1.25em; background: #ddd; height: 100%;">
+            <h4 class="title is-4 has-text-centered">Heat Dectectors</h4>
+            <p><b>Heat detectors</b> should be installed in areas that smoke detectors do not perform well. These are usually areas that are exposed to higher or lower temperatures such as an attic or garage. High dust concentration may cause false alarms in smoke detectors.</p>
+          </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

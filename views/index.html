@@ -1,0 +1,231 @@
+{% extends "base.html" %}
+
+{% block title %}We've Got You Covered!{% endblock %}
+
+{% block styles %}
+<style>
+.hero-img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  z-index: -1; 
+  width: 100%;
+  height: 100%;
+}
+
+.hero-filter {
+  background-color: #111;
+  opacity: 0.7;
+}
+
+.hero-img-img {
+  background-image: url('./img/cameras.jpg');
+  background-size: cover;  
+  background-position: center center;
+  background-repeat: no-repeat;  
+}
+
+.hero-body .title {
+  color: white;
+  /*font-size: 42px;*/
+  letter-spacing: 5px;
+}
+
+.hero-body .subtitle {
+  color: white;
+  letter-spacing: 2px;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="hero is-medium">
+  <div class="hero-body">
+    <div class="hero-img hero-img-img"></div>
+    <div class="hero-img hero-filter"></div>
+    <div class="container has-text-centered">
+      <h1 class="title is-1" style="margin-bottom: 1.5em;">DELTA SECURITY</h1>
+      <h2 class="subtitle is-3">YOUR FULL SERVICE <b>SECURITY SYSTEM PROVIDER</b> MAKING YOUR HOME AND OFFICE SAFE</h2> .
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <header class="has-text-centered" style="margin-bottom: 1.5em;">
+      <h3 class="title is-2">WHAT WE OFFER</h3>
+      <h4 class="subtitle is-3">The building blocks of our business</h4>
+    </header>    
+    <div class="columns is-multiline">
+      <div class="column">
+        <div class="col-block">
+          <header class="has-text-centered">
+            <span class="icon is-large">
+              <i class="fas fa-wrench fa-3x"></i>
+            </span>          
+            <h4 class="title is-5">Custom Designed Systems</h4>
+          </header>
+          <p>Our range of products allows us to provide highly adaptable systems for buildings and businesses of all types. Our attention to detail and decades of professional experience ensure you the best solution possible.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="col-block">
+          <header class="has-text-centered">
+            <span class="icon is-large">
+              <i class="fas fa-laptop fa-3x"></i>
+            </span>          
+            <h4 class="title is-5">Cutting Edge Technology</h4>
+          </header>
+          <p>We partner with the industry leaders in innovation to bring you the latest security solutions. Control your locks, thermostat, garage doors, view your doorbell camera, video monitoring system, and more all from your phone.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="col-block">
+          <header class="has-text-centered">
+            <span class="icon is-large">
+              <i class="fas fa-trophy fa-3x"></i>
+            </span>
+            <h4 class="title is-5">Quality Service</h4>
+          </header>
+          <p>Our security systems are monitored 24/7 to ensure your family and business's safety. Our technicians are available around the clock to ensure the integrity of your system is maintained and in working order.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="col-block">
+          <header class="has-text-centered">
+            <span class="icon is-large">
+              <i class="fas fa-users fa-3x"></i>
+            </span>          
+            <h4 class="title is-5">Personal Touch</h4>
+          </header>
+          <p>With over 30 years of outstanding service to our clients and community, Delta security is one of the leading alarm installers in the Bucks County area for home security and business security. </p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-primary is-bold" id="switch-link">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+
+          <header>
+            <h3 class="title is-3">SWITCH TO DELTA TODAY</h3>
+            <h4 class="subtitle is-6">Click here for more info</h4>
+          </header>
+
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <header class="has-text-centered" style="margin-bottom: 1.5em;">
+      <h3 class="title is-2">SYSTEMS AND SERVICES</h3>
+      <h4 class="subtitle is-3">Whether residential or commercial, we've got you covered!</h4>
+    </header>
+    <div class="columns is-multiline">
+      <div class="column">
+        <div class="col-block">
+          <header class="has-text-centered">
+            <span class="icon is-large">
+              <i class="fas fa-lock fa-3x"></i>
+            </span>          
+            <h4 class="title is-5">Burglar</h4>
+          </header>
+          <p>Delta Security can provide you with a state-of-the-art intrusion detection system to monitor your assets 24 hours a day 7 days a week. We can help you protect facilities ranging from small business to large warehouses. Cellular communication to central station for fast emergency response.</p>
+          <p class="has-text-centered"><a class="green-link" href="">Click here to learn more</a></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="col-block">
+          <header class="has-text-centered">
+            <span class="icon is-large">
+              <i class="fas fa-fire-extinguisher fa-3x"></i>
+            </span>          
+            <h4 class="title is-5">Fire</h4>
+          </header>
+          <p>The most effective, top-of-the-line equipment and our highly trained fire alarm specialists will install your customized system. We understand the requirements necessary to assist you with obtaining your Certificate of Occupancy and can conduct the testing and inspection of your system.</p>
+          <p class="has-text-centered"><a class="green-link" href="">Click here to learn more</a></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="col-block">
+          <header class="has-text-centered">
+            <span class="icon is-large">
+              <i class="fas fa-video fa-3x"></i>
+            </span>          
+            <h4 class="title is-5">Video Surveillance</h4>
+          </header>
+          <p>Help detect fraud and deter employee theft as well as protect yourself from litigation with a well-designed camera system. Closed Circuit Television (CCTV) and Network Video Management Systems (NVMS) allow for surveillance, communication, and safety and is a force multiplier for your existing security team for your facility.</p>
+          <p class="has-text-centered"><a class="green-link" href="">Click here to learn more</a></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="col-block">
+          <header class="has-text-centered">
+            <span class="icon is-large">
+              <i class="fas fa-id-card fa-3x"></i>
+            </span>          
+            <h4 class="title is-5">Access Control</h4>
+          </header>
+          <p>A properly designed Access Control System will identify credentials of users at all entry or exit points of multiple facilities, a single building, or an individual room.  Multiple users can be assigned access privileges system wide, selectively, or via a time schedule.</p>
+          <p class="has-text-centered"><a class="green-link" href="">Click here to learn more</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background-color: #ddd;">
+  <div class="container" style="max-width: 960px;">
+    <header class="has-text-centered" style="margin-bottom: 2em;">
+      <h3 class="title">START YOUR <u>FREE</u> QUOTE</h3>
+    </header>    
+    <form action="https://formspree.io/info@deltasecurityonline.com" method="POST">
+      <div class="columns">
+        <div class="column">
+          <div class="field">
+            <div class="control"><input class="input" type="text" placeholder="First Name" name="first_name" /></div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="field">
+            <div class="control"><input class="input" type="text" placeholder="Last Name" name="last_name" /></div>
+          </div>
+        </div>      
+      </div>
+      <div class="columns">
+        <div class="column">
+          <div class="field">
+            <div class="control"><input class="input" type="tel" placeholder="Phone Number (ex. 123-456-7890)" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone-number" /></div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="field">
+            <div class="control">
+              <input class="input" type="email" placeholder="Email" name="_replyto" />
+            </div>
+          </div>
+        </div>    
+      </div>
+      <div class="columns">
+        <div class="column">
+          <div class="field">
+            <div class="control"><input class="input" type="text" pattern="[0-9]{5}" placeholder="Zip Code" name="zipcode" /></div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="field">
+            <div class="control">
+              <span class="icon is-large">
+                <i class="fas fa-arrow-circle-right fa-2x"></i>
+              </span> 
+              <button type="submit" class="button is-success is-medium" style="font-weight: 600;">GET A FREE QUOTE</button>
+            </div>
+          </div>
+        </div>    
+      </div>  
+    </form> 
+  </div>
+</section>
+{% endblock %}
